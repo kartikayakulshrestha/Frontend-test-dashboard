@@ -12,12 +12,14 @@ import { IoIosAdd } from "react-icons/io";
 import { IoCaretDownSharp } from "react-icons/io5";
 import { BsPersonPlus } from "react-icons/bs";
 import { GiHelp } from "react-icons/gi";
-
+import { GiHamburgerMenu } from "react-icons/gi";
 export default function Leftpart() {
     const [products,tpro]=useState("hidden")
   const [sales,tsal]=useState("hidden")
   const [design,tdes]=useState("hidden")
   return (
+    <>
+    
     <div className="hidden m-1 rounded-2xl min-h-[500px] col-span-3 border border-slate-300  lg:block">
           <div className="  ">
           {/*  Branding part  */}
@@ -86,7 +88,7 @@ export default function Leftpart() {
             <div className="grid grid-cols-12 my-1 hover:bg-slate-100 px-3">
               
               <span className="flex align-middle contrast-50"><CiSquarePlus size={30} /></span>
-              <text className="grid col-span-10 font-medium text-slate-600 text-lg mx-1">Create a team </text> 
+              <text className="grid col-span-10 font-medium text-slate-600 text-lg mx-1" onClick={()=>alert(`Hire me!! I'll make it  work too 🥺`)}>Create a team </text> 
               
               </div>
           
@@ -208,7 +210,7 @@ export default function Leftpart() {
             <span className="col-span-2 bg-white text-center mx-4 mb-3 rounded-md">7</span>
             <p className="col-span-6 font-medium " > days left on trails</p>
             <div className="col-span-4">
-              <button className="bg-black text-white p-2 rounded-md whitespace-nowrap ">Add Billing</button>
+              <button className="bg-black text-white p-2 rounded-md whitespace-nowrap " onClick={()=>alert("Hire me!! I'll make it  work too. ◕⩊◕")}>Add Billing</button>
             </div>
           </div>
           
@@ -218,6 +220,7 @@ export default function Leftpart() {
         
         </div>
         </div>
+        </>
   )
 
 }

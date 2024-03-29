@@ -1,3 +1,4 @@
+"use client"
 import { FiSearch } from "react-icons/fi";
 import Leftpart from "./component/Leftpart";
 import { PiChatsLight } from "react-icons/pi";
@@ -13,6 +14,7 @@ import { FaPlus } from "react-icons/fa6";
 import { MdOutlineArchive } from "react-icons/md";
 import { IoTrashBinOutline } from "react-icons/io5";
 import { ImCross } from "react-icons/im";
+import { GiHamburgerMenu } from "react-icons/gi";
 export default function Home() {
   
   return (
@@ -25,11 +27,15 @@ export default function Home() {
 
         {/*  Right part  */}
 
-
+        
         <div className=" relative m-1 rounded-2xl min-h-[500px] col-span-12 lg:col-span-9 border shadow-md border-slate-200">
           {/*  Right part  Product */}
+          <div className="block lg:hidden absolute right-3 top-4">
+            <span className=""><GiHamburgerMenu size={30} onClick={()=>alert("See how passionate I AM ❤️‍🔥 Hint: Desktop view")}/></span>
+          </div>
+          <div className="min-h-9 lg:min-h-0"></div>
           <div className="grid grid-cols-12 shadow-md">
-
+          
             <p className="col-span-2  p-3 font-medium text-xl">Products</p>
 
             <div className="col-span-6 "></div>
@@ -66,7 +72,7 @@ export default function Home() {
               
               <div className=" col-span-8 xl:col-span-6  flex ">
               <div className="shadow-md  rounded-md border border-slate-300 mr-2">
-                <button className="flex p-1">
+                <button className="flex p-1" >
                   <figure className="my-1"><PiSquaresFourBold /></figure>
                   <p className="whitespace-nowrap ">All brands</p>
                   <figure className="my-1">< IoCaretDownSharp/></figure>
@@ -198,14 +204,12 @@ export default function Home() {
                   
                   </td>
                 
-                <td className="min-w-[170px]  text-start pl-2 border border-slate-400 whitespace-nowrap">Develop a personalize...</td>
+                <td className="min-w-[170px]  text-start pl-2 border border-slate-400 whitespace-nowrap">Introduce a cloud-ass...</td>
                 <td className="min-w-[170px]  text-start pl-2 border border-slate-400 whitespace-nowrap">
                   <div class="mt-3 flex -space-x-1 overflow-hidden">
                     <img class="inline-block h-5 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
                     <img class="inline-block h-5 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
                     <img class="inline-block h-5 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80" alt=""/>
-                    <img class="inline-block h-5 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
-                    <img class="inline-block h-5 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
                 </div>
                 </td>
                 <td className="min-w-[170px]  text-start pl-2 border border-slate-400 whitespace-nowrap">
@@ -217,7 +221,7 @@ export default function Home() {
 
                 </td>
                 <td className="min-w-[170px]  text-start pl-2 border border-slate-400 whitespace-nowrap">
-                <span className="bg-purple-300 text-purple-900 p-1 rounded-lg text-sm font-bold ">in 30minutes</span>
+                <span className="bg-slate-300 text-slate-900 p-1 rounded-lg text-sm font-bold ">Tomorrow</span>
 
                 </td>
                 <td className="min-w-[30px]  text-start pl-2 border border-slate-400"></td>
@@ -232,12 +236,11 @@ export default function Home() {
                   
                   </td>
                 
-                <td className="min-w-[170px]  text-start pl-2 border border-slate-400 whitespace-nowrap">Develop a personalize...</td>
+                <td className="min-w-[170px]  text-start pl-2 border border-slate-400 whitespace-nowrap">Develop a mobile a...</td>
                 <td className="min-w-[170px]  text-start pl-2 border border-slate-400 whitespace-nowrap">
                   <div class="mt-3 flex -space-x-1 overflow-hidden">
                     <img class="inline-block h-5 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
                     <img class="inline-block h-5 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
-                    <img class="inline-block h-5 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80" alt=""/>
                     <img class="inline-block h-5 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
                     <img class="inline-block h-5 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
                 </div>
@@ -251,7 +254,7 @@ export default function Home() {
 
                 </td>
                 <td className="min-w-[170px]  text-start pl-2 border border-slate-400 whitespace-nowrap">
-                <span className="bg-purple-300 text-purple-900 p-1 rounded-lg text-sm font-bold ">in 30minutes</span>
+                <span className="bg-blue-300 text-blue-900 p-1 rounded-lg text-sm font-bold ">Tomorrow</span>
 
                 </td>
                 <td className="min-w-[30px]  text-start pl-2 border border-slate-400"></td>
@@ -267,12 +270,14 @@ export default function Home() {
                   
                   </td>
                 
-                <td className="min-w-[170px]  text-start pl-2 border border-slate-400 whitespace-nowrap">Develop a personalize...</td>
+                <td className="min-w-[170px]  text-start pl-2 border border-slate-400 whitespace-nowrap">This program could...</td>
                 <td className="min-w-[170px]  text-start pl-2 border border-slate-400 whitespace-nowrap">
                   <div class="mt-3 flex -space-x-1 overflow-hidden">
                     <img class="inline-block h-5 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
                     <img class="inline-block h-5 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
                     <img class="inline-block h-5 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80" alt=""/>
+                    <img class="inline-block h-5 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
+                    <img class="inline-block h-5 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
                     <img class="inline-block h-5 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
                     <img class="inline-block h-5 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
                 </div>
@@ -285,7 +290,7 @@ export default function Home() {
 
                 </td>
                 <td className="min-w-[170px]  text-start pl-2 border border-slate-400 whitespace-nowrap">
-                <span className="bg-purple-300 text-purple-900 p-1 rounded-lg text-sm font-bold ">in 30minutes</span>
+                <span className="bg-green-300 text-green-900 p-1 rounded-lg text-sm font-bold ">in 6hours</span>
 
                 </td>
                 <td className="min-w-[30px]  text-start pl-2 border border-slate-400"></td>
@@ -300,14 +305,11 @@ export default function Home() {
                   
                   </td>
                 
-                <td className="min-w-[170px]  text-start pl-2 border border-slate-400 whitespace-nowrap">Develop a personalize...</td>
+                <td className="min-w-[170px]  text-start pl-2 border border-slate-400 whitespace-nowrap">Introduce a B2B to...</td>
                 <td className="min-w-[170px]  text-start pl-2 border border-slate-400 whitespace-nowrap">
                   <div class="mt-3 flex -space-x-1 overflow-hidden">
                     <img class="inline-block h-5 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
                     <img class="inline-block h-5 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
-                    <img class="inline-block h-5 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80" alt=""/>
-                    <img class="inline-block h-5 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
-                    <img class="inline-block h-5 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
                 </div>
                 </td>
                 <td className="min-w-[170px]  text-start pl-2 border border-slate-400 whitespace-nowrap">
@@ -319,7 +321,7 @@ export default function Home() {
 
                 </td>
                 <td className="min-w-[170px]  text-start pl-2 border border-slate-400 whitespace-nowrap">
-                <span className="bg-purple-300 text-purple-900 p-1 rounded-lg text-sm font-bold ">in 30minutes</span>
+                <span className="bg-red-300 text-red-900 p-1 rounded-lg text-sm font-bold ">No Contact</span>
 
                 </td>
                 <td className="min-w-[30px]  text-start pl-2 border border-slate-400"></td>
@@ -334,13 +336,14 @@ export default function Home() {
                   
                   </td>
                 
-                <td className="min-w-[170px]  text-start pl-2 border border-slate-400 whitespace-nowrap">Develop a personalize...</td>
+                <td className="min-w-[170px]  text-start pl-2 border border-slate-400 whitespace-nowrap">Implement an Al-driv...</td>
                 <td className="min-w-[170px]  text-start pl-2 border border-slate-400 whitespace-nowrap">
                   <div class="mt-3 flex -space-x-1 overflow-hidden">
                     <img class="inline-block h-5 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
                     <img class="inline-block h-5 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
                     <img class="inline-block h-5 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80" alt=""/>
                     <img class="inline-block h-5 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
+                    <img class="inline-block h-5 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
                     <img class="inline-block h-5 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
                 </div>
                 </td>
@@ -353,7 +356,7 @@ export default function Home() {
 
                 </td>
                 <td className="min-w-[170px]  text-start pl-2 border border-slate-400 whitespace-nowrap">
-                <span className="bg-purple-300 text-purple-900 p-1 rounded-lg text-sm font-bold ">in 30minutes</span>
+                <span className="bg-green-300 text-green-900 p-1 rounded-lg text-sm font-bold ">in 1hour</span>
 
                 </td>
                 <td className="min-w-[30px]  text-start pl-2 border border-slate-400"></td>
@@ -368,14 +371,17 @@ export default function Home() {
                   
                   </td>
                 
-                <td className="min-w-[170px]  text-start pl-2 border border-slate-400 whitespace-nowrap">Develop a personalize...</td>
+                <td className="min-w-[170px]  text-start pl-2 border border-slate-400 whitespace-nowrap">Offer a comprehensive...</td>
                 <td className="min-w-[170px]  text-start pl-2 border border-slate-400 whitespace-nowrap">
                   <div class="mt-3 flex -space-x-1 overflow-hidden">
                     <img class="inline-block h-5 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
                     <img class="inline-block h-5 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
                     <img class="inline-block h-5 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80" alt=""/>
                     <img class="inline-block h-5 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
+                    
                     <img class="inline-block h-5 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
+                    <img class="inline-block h-5 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
+
                 </div>
                 </td>
                 <td className="min-w-[170px]  text-start pl-2 border border-slate-400 whitespace-nowrap">
@@ -403,14 +409,12 @@ export default function Home() {
                   
                   </td>
                 
-                <td className="min-w-[170px]  text-start pl-2 border border-slate-400 whitespace-nowrap">Develop a personalize...</td>
+                <td className="min-w-[170px]  text-start pl-2 border border-slate-400 whitespace-nowrap">This could include...</td>
                 <td className="min-w-[170px]  text-start pl-2 border border-slate-400 whitespace-nowrap">
                   <div class="mt-3 flex -space-x-1 overflow-hidden">
                     <img class="inline-block h-5 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
                     <img class="inline-block h-5 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
                     <img class="inline-block h-5 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80" alt=""/>
-                    <img class="inline-block h-5 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
-                    <img class="inline-block h-5 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
                 </div>
                 </td>
                 <td className="min-w-[170px]  text-start pl-2 border border-slate-400 whitespace-nowrap">
@@ -421,7 +425,7 @@ export default function Home() {
 
                 </td>
                 <td className="min-w-[170px]  text-start pl-2 border border-slate-400 whitespace-nowrap">
-                <span className="bg-purple-300 text-purple-900 p-1 rounded-lg text-sm font-bold ">in 30minutes</span>
+                <span className="bg-slate-300 text-slate-900 p-1 rounded-lg text-sm font-bold ">Next Month</span>
 
                 </td>
                 <td className="min-w-[30px] text-start pl-2 border border-slate-400"></td>
@@ -436,7 +440,7 @@ export default function Home() {
                   
                   </td>
                 
-                <td className="min-w-[170px]  text-start pl-2 border border-slate-400 whitespace-nowrap">Develop a personalize...</td>
+                <td className="min-w-[170px]  text-start pl-2 border border-slate-400 whitespace-nowrap">Launch an advisory...</td>
                 <td className="min-w-[170px]  text-start pl-2 border border-slate-400 whitespace-nowrap">
                   <div class="mt-3 flex -space-x-1 overflow-hidden">
                     <img class="inline-block h-5 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
@@ -455,7 +459,7 @@ export default function Home() {
 
                 </td>
                 <td className="min-w-[170px]  text-start pl-2 border border-slate-400 whitespace-nowrap">
-                <span className="bg-purple-300 text-purple-900 p-1 rounded-lg text-sm font-bold ">in 30minutes</span>
+                <span className="bg-red-300 text-red-900 p-1 rounded-lg text-sm font-bold ">No Contact</span>
 
                 </td>
                 <td className="min-w-[30px]  text-start pl-2 border border-slate-400"></td>
@@ -470,13 +474,15 @@ export default function Home() {
                   
                   </td>
                 
-                <td className="min-w-[170px]  text-start pl-2 border border-slate-400 whitespace-nowrap">Develop a personalize...</td>
+                <td className="min-w-[170px]  text-start pl-2 border border-slate-400 whitespace-nowrap">The tool would an...</td>
                 <td className="min-w-[170px]  text-start pl-2 border border-slate-400 whitespace-nowrap">
                   <div class="mt-3 flex -space-x-1 overflow-hidden">
                     <img class="inline-block h-5 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
                     <img class="inline-block h-5 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
                     <img class="inline-block h-5 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80" alt=""/>
                     <img class="inline-block h-5 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
+                    <img class="inline-block h-5 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
+
                     <img class="inline-block h-5 w-6 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
                 </div>
                 </td>
@@ -488,7 +494,7 @@ export default function Home() {
 
                 </td>
                 <td className="min-w-[170px]  text-start pl-2 border border-slate-400 whitespace-nowrap">
-                <span className="bg-purple-300 text-purple-900 p-1 rounded-lg text-sm font-bold ">in 30minutes</span>
+                <span className="bg-slate-300 text-slate-900 p-1 rounded-lg text-sm font-bold ">Next month</span>
 
                 </td>
                 <td className="min-w-[30px]  text-start pl-2 border border-slate-400"></td>

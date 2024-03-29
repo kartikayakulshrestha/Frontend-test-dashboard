@@ -47,12 +47,12 @@ export default function Home() {
                  <FiSearch size={20}/> 
                  <input type="text" placeholder="Search for..." className="hidden lg:block rounded-md w-30 xl:w-60"></input>
                 </div>
-                <div className="col-span-2 md:col-span-2 lg:col-span-1 ">
+                <div className="col-span-2 md:col-span-2 lg:col-span-1 " onClick={()=>alert("If you are on Mobile view then go to DESKTOP VIEW 😐👉🚪 ")}>
                   <figure className="mx-1  my-3 p-1 shadow-lg rounded-md hover:bg-slate-300">
                   <PiChatsLight size={25} />
                   </figure>
                 </div>
-                <div className="col-span-2 md:col-span-2 lg:col-span-1 ">
+                <div className="col-span-2 md:col-span-2 lg:col-span-1 " onClick={()=>alert("If you are on Mobile view then go to DESKTOP VIEW 😐👉🚪 ")}>
                   <figure className="mx-1 my-3 p-1 shadow-lg rounded-md hover:bg-slate-300">
                   <IoSettingsSharp size={25} />
                   </figure>
@@ -64,23 +64,23 @@ export default function Home() {
 
 
           {/*  bars add brand  */}
-          <div className=" my-3 px-4 min-h-10  block md:hidden">
-                <span className="my-3 shadow-xl"><TfiMenuAlt size={30} /></span>
+          <div className=" my-3 px-4 min-h-10  block md:hidden" >
+                <span className="my-3 shadow-xl" ><TfiMenuAlt size={30} onClick={()=>alert("Please give feedback on my email ❤️‍🔥 Hint: Desktop view")}/></span>
           </div>
           <div className=" my-3 px-4 min-h-10 hidden md:block">
             <div className=" grid grid-cols-12 py-2">
               
               <div className=" col-span-8 xl:col-span-6  flex ">
-              <div className="shadow-md  rounded-md border border-slate-300 mr-2">
-                <button className="flex p-1" >
+              <div className="shadow-md hover:bg-slate-200 rounded-md border border-slate-300 mr-2">
+                <button className="flex p-1" onClick={()=>alert("I know MongoDB 😎😎!! ")} >
                   <figure className="my-1"><PiSquaresFourBold /></figure>
                   <p className="whitespace-nowrap ">All brands</p>
                   <figure className="my-1">< IoCaretDownSharp/></figure>
                 </button>
               </div>
               <div className=" ">
-              <div className="shadow-md  rounded-md border border-slate-300 mr-2">
-                <button className="flex p-1 px-2">
+              <div className="shadow-md hover:bg-slate-200 rounded-md border border-slate-300 mr-2">
+                <button className="flex p-1 px-2" onClick={()=>alert("I know Express JS+ NodeMailer 🚀🚀!! ")}>
                   
                   <p className="whitespace-nowrap">Desk</p>
                   <figure className="my-1 mx-1 ">< IoCaretDownSharp/></figure>
@@ -88,8 +88,8 @@ export default function Home() {
               </div>
               </div>
               <div className="">
-              <div className="shadow-md  rounded-md border border-slate-300 mr-2">
-                <button className="flex p-1 px-2">
+              <div className="shadow-md hover:bg-slate-200 rounded-md border border-slate-300 mr-2">
+                <button className="flex p-1 px-2" onClick={()=>alert("I know React Js 🤩🤩😎!! ")}>
                   
                   <p className="whitespace-nowrap">Tags</p>
                   <figure className="my-1 mx-1 ">< IoCaretDownSharp/></figure>
@@ -98,7 +98,7 @@ export default function Home() {
               </div>
               <div className="">
               <div className="shadow-md  rounded-md border border-slate-300 mr-2 ">
-                <button className="flex p-1 px-2 bg-slate-200 text-slate-600">
+                <button className="flex p-1 px-2 hover:bg-slate-300 bg-slate-200 text-slate-600">
                 <figure className="my-1 mx-1 ">< FaSortNumericUp/></figure>
                   <p className="whitespace-nowrap">Sort</p>
                   
@@ -107,7 +107,7 @@ export default function Home() {
               </div>
               <div className="">
               <div className="shadow-md  rounded-md border border-slate-300">
-                <button className="flex p-1 px-2 bg-slate-200 text-slate-600">
+                <button className="flex p-1 px-2 hover:bg-slate-300 bg-slate-200 text-slate-600">
                 <figure className="my-1 mx-1 ">< RiSoundModuleFill /></figure>
                   <p className="whitespace-nowrap">Filter</p>
                   
@@ -119,8 +119,8 @@ export default function Home() {
 
               <div className="col-span-3 xl:col-span-3 flex justify-end">
               <div className="">
-              <div className="shadow-md  rounded-md border border-slate-300 mx-2" >
-                <button className="flex p-1 px-2">
+              <div className="shadow-md hover:bg-slate-200 rounded-md border border-slate-300 mx-2" >
+                <button className="flex p-1 px-2" onClick={()=>alert("I know NEXT Js 🤩!! ")}>
                 <figure className="my-1 mx-1 ">< BiMessageSquareAdd /></figure>
                   <p className="whitespace-nowrap">Meeting</p>
                   
@@ -128,8 +128,8 @@ export default function Home() {
               </div>
               </div>
               <div className="">
-              <div className="shadow-md  rounded-md border border-slate-300">
-                <button className="flex p-1 px-2 ">
+              <div className="shadow-md hover:bg-slate-200 rounded-md border border-slate-300">
+                <button className="flex p-1 px-2 " onClick={()=>alert(" I can make it work for you! 👀 ")}>
                 <figure className="my-1 mx-1 ">< BiImport /></figure>
                   <p className="whitespace-nowrap">Import / Export</p>
                   
@@ -535,19 +535,19 @@ export default function Home() {
                 <div className="col-span-3 rounded-md shadow--md ">
                   <p className="font-medium"><span className="bg-black text-white rounded-lg px-1 ml-1">3</span> Selected</p>
                 </div>
-                <div className=" col-span-3 border border-slate-300 rounded-lg shadow-lg">
+                <div className=" col-span-3 hover:bg-slate-100 border border-slate-300 rounded-lg shadow-lg" onClick={()=>alert("I know REDUX (DESKTOP VIEW Pleasee!) 😎😎!! ")}>
                   <div className="flex justify-center ">
                     <span className="mt-1"><MdOutlineArchive size={20} /></span>
                     <p>Archive</p>
                   </div>
                 </div>
-                <div className="border border-slate-300 rounded-lg shadow-lg col-span-3">
+                <div className="border hover:bg-red-100 border-slate-300 rounded-lg shadow-lg col-span-3" onClick={()=>alert("I know REACT Hooks !!(DESKTOP VIEW Pleasee!) 😎😎!! ")}>
                 <div className="flex justify-center ">
                     <span className="mt-1 mr-1"><IoTrashBinOutline size={20} color="darkred"/></span>
                     <p>Delete</p>
                   </div>
                 </div>
-                <div className="border border-slate-300 rounded-lg shadow-lg col-span-2">
+                <div className="border hover:bg-slate-100 border-slate-300 rounded-lg shadow-lg col-span-2" onClick={()=>alert("Please !!( if not DESKTOP VIEW Pleasee!) 😎😎!! ")}>
                 <div className="flex justify-center ">
                 <p>More</p>
                     <span className="mt-1 ml-1"><IoCaretDownSharp size={20} /></span>
@@ -569,3 +569,4 @@ export default function Home() {
     </main>
   );
 }
+
